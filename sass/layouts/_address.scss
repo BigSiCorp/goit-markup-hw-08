@@ -1,0 +1,27 @@
+.address {
+    width: 231px;
+}
+.address__map {
+    margin-bottom: 9px;
+    
+    font-style: normal;
+    line-height: 1.71;
+    text-decoration: none;
+
+    color: var(--white-color);
+}
+.address__contact {
+    font-style: normal;
+    line-height: 1.71;
+    text-decoration: none;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    &:first-child {
+            margin-bottom: 9px;
+        }
+    &:hover,
+    &:focus {
+            color: var(--secondary-text-color);
+        }
+}

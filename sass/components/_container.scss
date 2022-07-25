@@ -1,0 +1,30 @@
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.header__container {
+    @include displayFlex(flex, center, null);
+}
+.offers__container {
+    content: '';
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+
+    background: rgba(47, 48, 58, 0.8);
+}
+.modal__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 448px;
+
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,121 @@
+.hero__title {
+    margin: 0 auto 30px;
+    width: 696px;
+    
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: var(--white-color);
+    }
+.advantages__subtitle {
+    margin-bottom: 10px;
+    margin-top: 0;
+
+    font-weight: 700;
+    font-size: inherit;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: var(--title-text-color);
+    
+}
+.advantages__description {
+    line-height: 1.71;
+}
+.offers__title,
+.team__title,
+.clientel__title {
+    margin-bottom: 50px;
+    margin-top: 0;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+
+    color: var(--title-text-color);
+}
+.team__name {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+
+    color: var(--title-text-color);
+}
+.team__position {
+    margin-bottom: 16px;
+
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+.offers__descript {
+    min-width: 100%;
+    margin: 0;
+    padding: 27px;
+
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.invitation__title,
+.mailing__title {
+    padding-top: 12px;
+    margin-bottom: 20px;
+    margin-right: 0;
+
+    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+.modal__title {
+    margin-bottom: 12px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+}
+.portfolio__subtitle {
+    margin-top: 0;
+    margin-bottom: 4px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+    color: var(--title-text-color);
+}
+.portfolio__type {
+    margin-top: 0;
+    margin-bottom: 20px;
+    
+    font-size: 16px;
+    line-height: 1.88;
+    
+    color: var(--text-color);
+}
+
+.portfolio__type:last-child {
+    margin-bottom: 0;
+}

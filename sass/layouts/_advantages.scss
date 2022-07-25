@@ -1,0 +1,24 @@
+.advantages__list {
+    @include displayFlex(flex, null, center);
+}
+.advantages__item {
+    width: 270px;
+    margin-left: 30px;
+
+    &:first-child {
+        margin-left: 0;
+    }
+}
+.advantages__img {
+    @include displayFlex();
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+
+    background: #F5F4FA;
+    border-radius: 4px;
+}
+.advantages__icon {
+    width: 70px;
+    height: 70px;
+}

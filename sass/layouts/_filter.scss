@@ -1,0 +1,8 @@
+.filter {
+    @include displayFlex(flex, null, center);
+    
+    margin-bottom: 34px;
+}
+.filter__list:nth-child(n+2) {
+    margin-left: 8px;
+}
