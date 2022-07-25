@@ -9,15 +9,20 @@
 @import "./base/typography";
 
 // ------------------------------- Components ------------------------------- //
- @import "./components/container";
+ @import "./components/container-mf";
+ /*@import "./components/container";*/
  @import "./components/sections";
- @import "./components/buttons";
- @import "./components/logo";
+ /*@import "./components/buttons";*/
+ @import "./components/buttons-mf";
+ /*@import "./components/logo";*/
+ @import "./components/logo-mf";
 
 // ------------------------------- Layouts ------------------------------- //
- @import "./layouts/header";
+ /*@import "./layouts/header";*/
+ @import "./layouts/header-mf";
  @import "./layouts/hero";
- @import "./layouts/advantages";
+ /*@import "./layouts/advantages";*/
+ @import "./layouts/advantages-mf";
  @import "./layouts/offers";
  @import "./layouts/team";
  @import "./layouts/clientel";

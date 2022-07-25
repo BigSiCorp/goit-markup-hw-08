@@ -1,0 +1,22 @@
+
+.logo {
+    display: inline-block;
+    min-width: 145px;
+
+    font-family: raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+
+    color: var(--secondary-text-color);
+}
+.logo--white {
+    color: var(--white-color);
+}
+.logo--black {
+    color: #000000;
+}
+.logo--footer {
+    padding-bottom: 20px;
+}
