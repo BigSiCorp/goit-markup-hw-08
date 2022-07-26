@@ -1,8 +1,7 @@
 
 .logo {
     display: block;
-    min-width: 145px;
-
+    
     font-family: raleway, sans-serif;
     font-weight: 700;
     font-size: 24px;
@@ -11,7 +10,7 @@
 
     color: var(--secondary-text-color);
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
             display: inline-block;
             font-size: 26px;
             line-height: 1.19;

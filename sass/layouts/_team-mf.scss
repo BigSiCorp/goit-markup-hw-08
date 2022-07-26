@@ -5,9 +5,16 @@
     display: block;
 
     @media screen and (min-width: 768px) {
-       
-            @include displayFlex(flex, null, center);
-}    }
+        @include displayFlex(flex, null, center);
+        flex-wrap: wrap;
+        row-gap: 30px;
+        column-gap: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+        @include displayFlex(flex, null, center);
+        flex-wrap: nowrap;
+ }
+}
 
 .team__contacts-list {
     @include displayFlex(flex, null, center);
@@ -32,22 +39,30 @@
         }
 
     @media screen and (min-width: 768px) {
-    width: 270px;
-    margin-left: 30px;
-    
-    &:first-child {
-            margin-top: auto;
-            margin-left: 0;
-        }
-    &:last-child {
-            margin-bottom: auto;
-        }
-}
-}
+    width: 354px;
+    margin: 0;
+                @media screen and (min-width: 1200px) {
+                    width: 270px;
+                    margin-left: 30px;
+        
+                    &:first-child {
+                        margin-top: auto;
+                        margin-left: 0;
+                    }
+        
+                    &:last-child {
+                        margin-bottom: auto;
+                    }
+}}}
+
 .team__img {
     margin: 0 auto 30px;
     @media screen and (min-width: 768px) {
-    margin-bottom: 30px;}
+    margin: 0;
+    margin-bottom: 30px;
+    width: 354px;
+    height: 374px;
+}
 }
 .team__contacts-item {
     @include displayFlex(flex, null, center);

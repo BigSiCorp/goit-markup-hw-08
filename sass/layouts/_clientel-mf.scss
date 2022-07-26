@@ -2,7 +2,7 @@
         @include displayFlex(flex, null, center);
         gap: 30px;
         flex-wrap: wrap;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
         flex-wrap: nowrap;
     }
     
@@ -29,8 +29,11 @@
         }
 
         @media screen and (min-width: 768px) {
-            width: 170px;
+            width: 226px;
         }
+                @media screen and (min-width: 1200px) {
+                    width: 170px;
+                }
 }
 .clientel__icon {
     width: 106px;

@@ -16,10 +16,10 @@
     @include displayFlex(flex, center, space-between);
     padding-top: 10px;
     padding-bottom: 10px;
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
         @include displayFlex(flex, center, null);
-        padding-top: none;
-        padding-bottom: none;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 }
 .offers__container {

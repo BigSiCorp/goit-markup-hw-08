@@ -16,10 +16,14 @@
 .site-nav {
     display: none;
     
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
         display: flex;
-        margin-left: 93px;
+        margin-left: 88px;
     }
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            margin-left: 93px;
+        }
 }
 
 .site-nav__item {
@@ -65,31 +69,77 @@
 .auth-nav {
     display: none;
     
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         display: flex;
         margin-left: auto;
+        flex-wrap: wrap;
+        row-gap: 10px;
     }
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            margin-left: auto;
+        }
 }
 .auth-nav__link {
-    display: flex;
-    gap: 10px;
 
-    
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    
-    color: var(--text-color);
-
-    &:hover,
-    &:focus {
-        color: var(--secondary-text-color);
+    @media screen and (min-width: 768px) {
+        display: flex;
+            gap: 10px;
+        
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 1.17;
+            letter-spacing: 0.02em;
+            text-decoration: none;
+        
+            color: var(--text-color);
+        
+            &:hover,
+            &:focus {
+                color: var(--secondary-text-color);
+            }
     }
+        @media screen and (min-width: 1200px) {
+            font-size: 14px;
+            line-height: 1.14;
+        }
+    
 }
 .auth-nav__icon {
     fill: currentColor;
+    .auth-nav__item:first-child & {
+            @media screen and (min-width: 768px) {
+                width: 14px;
+                height: 10px;
+            }
+    
+            @media screen and (min-width: 1200px) {
+                width: 16px;
+                height: 12px;
+            }
+        }
+    
+        .auth-nav__item:last-child & {
+            @media screen and (min-width: 768px) {
+                width: 10px;
+                height: 14px;
+            }
+    
+            @media screen and (min-width: 1200px) {
+                width: 10px;
+                height: 16px;
+            }
+        }
+}
+
+.auth-nav__item {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-left: 84px;
+    }
 }
 .auth-nav__item:nth-child(2) {
-    margin-left: 50px;
+    @media screen and (min-width: 1200px) {
+        margin-left: 50px;
+    }
+    
 }
