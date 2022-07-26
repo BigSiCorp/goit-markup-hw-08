@@ -26,7 +26,35 @@
                 <li class="site-nav__item"><a class="site-nav__link" href="./portfolio.html">Портфолио</a></li>
                 <li class="site-nav__item"><a class="site-nav__link" href="">Контакты</a></li>
             </ul>
-            <div class="menu-container" id="menu-container" data-menu></div>
+            <div class="menu-container" id="menu-container" data-menu>
+                <ul class="site-nav-mobile">
+                    <li class="site-nav-mobile__item"><a class="site-nav-mobile__link site-nav-mobile__link--current" href="./index.html">Студия</a></li>
+                    <li class="site-nav-mobile__item"><a class="site-nav-mobile__link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="site-nav-mobile__item"><a class="site-nav-mobile__link" href="">Контакты</a></li>
+                </ul>
+                <ul class="auth-nav-mobile">
+                    <li class="auth-nav-mobile__item"><a class="auth-nav-mobile__link" href="tel:+380961111111">
+                            +38 096 111 11 11</a>
+                    </li>
+                    <li class="auth-nav-mobile__item"><a class="auth-nav-mobile__link" href="mailto:info@devstudio.com">
+                        info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mobile-contacts">
+                    <li class="mobile-contacts__item">
+                        <a class="mobile-contacts__link" href="">Instagram</a>
+                    </li>
+                    <li class="mobile-contacts__item">
+                        <a class="mobile-contacts__link" href="">Twitter</a>
+                    </li>
+                    <li class="mobile-contacts__item">
+                        <a class="mobile-contacts__link" href="">Facebook</a>
+                    </li>
+                    <li class="mobile-contacts__item">
+                        <a class="mobile-contacts__link" href="">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
         <ul class="auth-nav">
             <li class="auth-nav__item"><a class="auth-nav__link" href="mailto:info@devstudio.com">                             
@@ -314,10 +342,10 @@
         <div class="address">                                                                                 
         <a href="./index.html" class="logo logo--footer">Web<span class="logo--white">Studio</span></a>                        
         <address>
-            <ul>
-                <li><a class="address__map" href="https://goo.gl/maps/piqngm7oDQpEDh6u6" target="_blank" rel="noopener nofollow noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>    
-                <li><a class="address__contact" href="mailto:info@example.com">info@example.com</a></li>                                                                                      
-                <li><a class="address__contact" href="tel:+380991111111">+38 099 111 11 11</a></li>                                                                                      
+            <ul class="address__list">
+                <li class="address__item"><a class="address__map" href="https://goo.gl/maps/piqngm7oDQpEDh6u6" target="_blank" rel="noopener nofollow noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>    
+                <li class="address__item"><a class="address__contact" href="mailto:info@example.com">info@example.com</a></li>                                                                                      
+                <li class="address__item"><a class="address__contact" href="tel:+380991111111">+38 099 111 11 11</a></li>                                                                                      
             </ul>
         </address>
         </div>
@@ -408,8 +436,8 @@
                         <svg class="form__checkbox">                                                                                              
                             <use class="form__img" href="./images/icons.svg#icon-submit"></use>
                         </svg>
-                        Соглашаюсь с рассылкой и
-                        принимаю <a href="">Условия договора</a>
+                        <span class="form__acceptance">Соглашаюсь с рассылкой и
+                        принимаю</span><a class="form__agreement" href="">Условия договора</a>
                     </label>
                     <button class="btn-submit" type="submit">Отправить                                                                
                     </button>

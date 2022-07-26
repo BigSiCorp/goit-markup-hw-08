@@ -1,0 +1,13 @@
+.filter {
+    @include displayFlex(flex, null, start);
+    flex-wrap: wrap;
+    gap: 8px;
+    row-gap: 15px;
+    padding-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+        @include displayFlex(flex, null, center);
+        flex-wrap: no-wrap;
+        padding-bottom: 34px;
+    }
+}

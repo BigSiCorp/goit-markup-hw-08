@@ -15,12 +15,50 @@
         <div class="container header__container">
             <nav class="main-nav">
                 <a href="./index.html" class="logo">Web<span class="logo--black">Studio</span></a>
+                <button type="button" aria-expanded="false" aria-controls="menu-container" class="menu-btn"
+                    data-menu-button>
+                    <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                        <use class="menu-btn__close" href="./images/icons.svg#close-mf"></use>
+                        <use class="menu-btn__menu" href="./images/icons.svg#menu-mf"></use>
+                    </svg>
+                </button>
                 <ul class="site-nav">
-                    <li class="site-nav__item"><a class="site-nav__link" href="./index.html">Студия</a>
-                    </li>
+                    <li class="site-nav__item"><a class="site-nav__link"
+                            href="./index.html">Студия</a></li>
                     <li class="site-nav__item"><a class="site-nav__link site-nav__link--current" href="./portfolio.html">Портфолио</a></li>
                     <li class="site-nav__item"><a class="site-nav__link" href="">Контакты</a></li>
                 </ul>
+                <div class="menu-container" id="menu-container" data-menu>
+                    <ul class="site-nav-mobile">
+                        <li class="site-nav-mobile__item"><a class="site-nav-mobile__link"
+                                href="./index.html">Студия</a></li>
+                        <li class="site-nav-mobile__item"><a class="site-nav-mobile__link site-nav-mobile__link--current"
+                                href="./portfolio.html">Портфолио</a></li>
+                        <li class="site-nav-mobile__item"><a class="site-nav-mobile__link" href="">Контакты</a></li>
+                    </ul>
+                    <ul class="auth-nav-mobile">
+                        <li class="auth-nav-mobile__item"><a class="auth-nav-mobile__link" href="tel:+380961111111">
+                                +38 096 111 11 11</a>
+                        </li>
+                        <li class="auth-nav-mobile__item"><a class="auth-nav-mobile__link" href="mailto:info@devstudio.com">
+                                info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="mobile-contacts">
+                        <li class="mobile-contacts__item">
+                            <a class="mobile-contacts__link" href="">Instagram</a>
+                        </li>
+                        <li class="mobile-contacts__item">
+                            <a class="mobile-contacts__link" href="">Twitter</a>
+                        </li>
+                        <li class="mobile-contacts__item">
+                            <a class="mobile-contacts__link" href="">Facebook</a>
+                        </li>
+                        <li class="mobile-contacts__item">
+                            <a class="mobile-contacts__link" href="">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
             <ul class="auth-nav">
                 <li class="auth-nav__item"><a class="auth-nav__link" href="mailto:info@devstudio.com">
@@ -51,22 +89,22 @@
         </ul>
     </div>
         <div class="container">
-        <ul class="portfolio">                                                                                                             <!--class="portfolio-list">-->
-            <li class="portfolio__card">                                                                                                               <!--class="item">-->
-                <a class="portfolio__link" href="">                                                                                        <!--class="link"-->
-                    <div class="portfolio__img"><img src="./images/tech.jpg" alt="страница сайта на экране ноутбука" width="370"/>                <!--class="card-img">-->
-                    <div class="portfolio__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить  <!--class="overlay-text">-->
+        <ul class="portfolio">                                                                                                             
+            <li class="portfolio__card">                                                                                                               
+                <a class="portfolio__link" href="">                                                                                        
+                    <div class="portfolio__img"><img class="portfolio__design" src="./images/tech.jpg" alt="страница сайта на экране ноутбука" />                
+                    <div class="portfolio__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить  
                     исчерпывающие сведения о компании или частном лице.</div>
                     </div>                    
-                <div class="portfolio__meta">                                                                                                     <!--class="card-item"-->     
-                    <h2 class="portfolio__subtitle">Технокряк</h2>                                                                                         <!--class="subtitle"-->
-                    <p class="portfolio__type">Веб-сайт</p>                                                                                                             <!-- -->
+                <div class="portfolio__meta">                                                                                                          
+                    <h2 class="portfolio__subtitle">Технокряк</h2>                                                                                         
+                    <p class="portfolio__type">Веб-сайт</p>                                                                                                             
                 </div>
                 </a>
             </li>
             <li class="portfolio__card">
                 <a class="portfolio__link" href="">
-                <div class="portfolio__img"><img src="./images/basketball.jpg" alt="два баскетболиста" width="370" />
+                <div class="portfolio__img"><img class="portfolio__design" src="./images/basketball.jpg" alt="два баскетболиста" />
                     <div class="portfolio__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит посетителю получить
                         исчерпывающие сведения о компании или частном лице.</div>
@@ -79,8 +117,8 @@
             </li>
             <li class="portfolio__card">
                 <a class="portfolio__link" href="">
-                    <div class="portfolio__img"><img src="./images/seafood.jpg"
-                        alt="логотип ресторана Seafood" width="370" />
+                    <div class="portfolio__img"><img class="portfolio__design" src="./images/seafood.jpg"
+                        alt="логотип ресторана Seafood" />
                     <div class="portfolio__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит посетителю получить
                         исчерпывающие сведения о компании или частном лице.</div></div>
@@ -92,7 +130,7 @@
             </li>
             <li class="portfolio__card">
                 <a class="portfolio__link" href="">
-                    <div class="portfolio__img" ><img src="./images/prime.jpg" alt="наушники" width="370"/>
+                    <div class="portfolio__img" ><img class="portfolio__design" src="./images/prime.jpg" alt="наушники" />
                     <div class="portfolio__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит посетителю получить
                         исчерпывающие сведения о компании или частном лице.</div>
@@ -105,7 +143,7 @@
             </li>
             <li class="portfolio__card">
                 <a class="portfolio__link" href="">
-                <div class="portfolio__img"><img src="./images/boxes.jpg" alt="две картонные коробки" width="370" />
+                <div class="portfolio__img"><img class="portfolio__design" src="./images/boxes.jpg" alt="две картонные коробки" />
                 <div class="portfolio__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                     позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.</div>
@@ -118,7 +156,7 @@
             </li>
             <li class="portfolio__card">
                 <a class="portfolio__link" href="">
-                <div class="portfolio__img" ><img src="./images/inspiration.jpg" alt="страница сайта на экране монитора" width="370" />
+                <div class="portfolio__img" ><img class="portfolio__design" src="./images/inspiration.jpg" alt="страница сайта на экране монитора" />
                 <div class="portfolio__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                     позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.</div>
@@ -131,7 +169,7 @@
             </li>
             <li class="portfolio__card">
                 <a class="portfolio__link" href="">
-                <div class="portfolio__img" ><img src="./images/limited-edition.jpg" alt="страница журнала" width="370" />
+                <div class="portfolio__img" ><img class="portfolio__design" src="./images/limited-edition.jpg" alt="страница журнала" />
                 <div class="portfolio__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                     позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.</div>
@@ -144,7 +182,7 @@
             </li>
             <li class="portfolio__card">
                 <a class="portfolio__link" href="">
-                <div class="portfolio__img"><img src="./images/lab.jpg" alt="бирка" width="370" />
+                <div class="portfolio__img"><img class="portfolio__design" src="./images/lab.jpg" alt="бирка" />
                 <div class="portfolio__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                     позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.</div>
@@ -157,7 +195,7 @@
             </li>
             <li class="portfolio__card">
                 <a class="portfolio__link" href="">
-                <div class="portfolio__img"><img src="./images/business.jpg" alt="страница сайта на экране ноутбука" width="370" />
+                <div class="portfolio__img"><img class="portfolio__design" src="./images/business.jpg" alt="страница сайта на экране ноутбука" />
                 <div class="portfolio__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                     позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.</div>
@@ -252,5 +290,6 @@
             </div>
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
     </body>
     </html>

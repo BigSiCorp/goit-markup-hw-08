@@ -1,0 +1,46 @@
+.address {
+    width: 100%;
+    
+    @media screen and (min-width: 768px) {
+    width: 231px;
+    }
+    }
+.address__map {
+    display: block;
+    margin-bottom: 9px;
+    
+    font-style: normal;
+    line-height: 1.71;
+    text-decoration: none;
+    text-align: center;
+
+    color: var(--white-color);
+
+    @media screen and (min-width: 768px) {
+            display: inherit;
+            text-align: left;
+        }
+}
+.address__contact {
+    display: block;
+    text-align: center;
+
+    font-style: normal;
+    line-height: 1.71;
+    text-decoration: none;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    @media screen and (min-width: 768px) {
+            display: inherit;
+            text-align: left;
+        }
+
+    &:hover,
+    &:focus {
+            color: var(--secondary-text-color);
+        }
+}
+.address__item:nth-child(2) {
+        margin-bottom: 9px;
+}
