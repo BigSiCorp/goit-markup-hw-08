@@ -2,9 +2,14 @@
     @include displayFlex(flex, null, center);
     
     flex-wrap: wrap;
+
+    @media screen and (min-width: 768px) {
+            gap: 30px;
+        }
 }
 .portfolio__card {
     width: 450px;
+    height: 404px;
     margin-left: 0;
     margin-bottom: 30px;
     overflow: hidden;
@@ -18,9 +23,18 @@
         margin-bottom: 0;
     }
         @media screen and (min-width: 768px) {
+            width: 354px;
+            height: 440px;
+            margin-bottom: 0;
+
+            &:last-child {
+                    margin-bottom: 0;
+                    margin-right: auto;
+                }
+        }
+        @media screen and (min-width: 1200px) {
             width: 370px;
-            margin-left: 30px;
-        
+                    
     &:nth-child(3n+1) {
             margin-left: 0;
         }
@@ -66,14 +80,23 @@
     display: flex;
     flex-direction: column;
     text-decoration: none;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        flex-grow: 1;
+        height: 100%;
+    }
 }
+
 .portfolio__meta {
-    padding: 20px 24px;
+    padding: 19px 24px;
     border: 1px solid #eeeeee;
     border-top: none;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+            flex-grow: 1;
+        }
 }
 .portfolio__design {
     width: 450px;
+    height: 294px;
 
     @media screen and (min-width: 768px) {
         width: 370px;

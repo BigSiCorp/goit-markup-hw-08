@@ -38,10 +38,6 @@
 .advantages__description {
     margin: 0;
     line-height: 1.71;
-
-    @media screen and (min-width: 768px) {
-            margin: inherit;
-        }
 }
 .offers__title,
 .team__title,
@@ -111,8 +107,12 @@
     @media screen and (min-width: 768px) {
         margin-right: 0;
         padding-top: 12px;
-        text-align: left;
-    }
+        }
+        @media screen and (min-width: 1200px) {
+            margin-right: 0;
+            padding-top: 12px;
+            text-align: left;
+        }
 }
 .modal__title {
     margin-bottom: 12px;
@@ -125,7 +125,7 @@
 
     color: #212121;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
     line-height: 1.15;
 }
 }

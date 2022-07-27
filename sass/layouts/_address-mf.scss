@@ -2,8 +2,11 @@
     width: 100%;
     
     @media screen and (min-width: 768px) {
-    width: 231px;
+    width: 50%;
     }
+        @media screen and (min-width: 1200px) {
+            width: 231px;
+        }
     }
 .address__map {
     display: block;
@@ -16,8 +19,7 @@
 
     color: var(--white-color);
 
-    @media screen and (min-width: 768px) {
-            display: inherit;
+    @media screen and (min-width: 1200px) {
             text-align: left;
         }
 }
@@ -31,8 +33,7 @@
 
     color: rgba(255, 255, 255, 0.6);
 
-    @media screen and (min-width: 768px) {
-            display: inherit;
+    @media screen and (min-width: 1200px) {
             text-align: left;
         }
 

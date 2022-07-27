@@ -36,10 +36,10 @@
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    @media screen and (min-width: 768px) {
-        width: 528px;
-        height: 581px;
-    }
+        @media screen and (min-width: 1200px) {
+            width: 528px;
+            height: 581px;
+        }
 
     .is-hidden & {
             opacity: 0;
@@ -159,11 +159,21 @@
     font-size: 12px;
     line-height: 1.17;
     color: #757575;
+
+    @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+    }
 }
 .form__agreement {
     font-size: 12px;
     line-height: 1.17;
     color: var(--secondary-text-color);
+
+    @media screen and (min-width: 1200px) {
+            font-size: 14px;
+            line-height: 1.71;
+        }
 }
 
 

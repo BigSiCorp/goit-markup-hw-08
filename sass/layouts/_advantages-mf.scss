@@ -10,7 +10,7 @@
     }
         @media screen and (min-width: 1200px) {
             @include displayFlex(flex, null, center);
-            margin: 30px auto;
+            margin: auto;
             flex-wrap: nowrap;
         }
     
@@ -50,7 +50,7 @@
             @include displayFlex();
             width: 270px;
             height: 120px;
-            margin: 0 auto;
+            margin: 0 auto 30px;
     }
 }
 .advantages__icon {
