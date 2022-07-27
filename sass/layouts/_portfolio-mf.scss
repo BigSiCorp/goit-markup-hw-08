@@ -9,7 +9,6 @@
 }
 .portfolio__card {
     width: 450px;
-    height: 404px;
     margin-left: 0;
     margin-bottom: 30px;
     overflow: hidden;
@@ -24,7 +23,6 @@
     }
         @media screen and (min-width: 768px) {
             width: 354px;
-            height: 440px;
             margin-bottom: 0;
 
             &:last-child {
