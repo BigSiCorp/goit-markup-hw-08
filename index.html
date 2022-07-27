@@ -128,22 +128,46 @@
             <div class="container">
             <h2 class="offers__title">Чем мы занимаемся</h2>                                        
             <ul class="offers__list">                                                           
-                <li class="offers__item"><img class="offers_img" src="./images/image1.jpg"                               
-                         alt="человек печатает на клавиатуре на рабочем офисном месте" 
-                         width="370"/>                                                           
+                <li class="offers__item">
+                    <picture>
+                        <source media="(min-width: 1200px)"
+                            srcset="./images/gallery/image1-desk@1x.jpg 1x, ./images/gallery/image1-desk@2x.jpg 2x" />
+                        <source media="(min-width: 768px)"
+                            srcset="./images/gallery/image1-desk@1x.jpg 1x, ./images/gallery/image1-desk@2x.jpg 2x" />
+                        <source media="(max-width: 767px)"
+                            srcset="./images/gallery/image1-desk@1x.jpg 1x, ./images/gallery/image1-desk@2x.jpg 2x" />
+                        <img class="offers_img" src="./images/gallery/image1-desk@1x.jpg" alt="человек набирает данные на клавиатуре" width="370"
+                            loading="lazy" />
+                    </picture>
                          <div class="offers__container">                                               
                          <p class="offers__descript">Десктопные приложения</p>                       
                          </div>
                 </li>
-                <li class="offers__item"><img class="offers_img" src="./images/image2.jpg"
-                         alt="человек сидит за столом, перед ноутбуком и держит в руке телефон"
-                         width="370"/>
+                <li class="offers__item">
+                    <picture>
+                        <source media="(min-width: 1200px)"
+                            srcset="./images/gallery/image2-desk@1x.jpg 1x, ./images/gallery/image2-desk@2x.jpg 2x" />
+                        <source media="(min-width: 768px)"
+                            srcset="./images/gallery/image2-desk@1x.jpg 1x, ./images/gallery/image2-desk@2x.jpg 2x" />
+                        <source media="(max-width: 767px)"
+                            srcset="./images/gallery/image2-desk@1x.jpg 1x, ./images/gallery/image2-desk@2x.jpg 2x" />
+                        <img class="offers_img" src="./images/gallery/image2-desk@1x.jpg" alt="человек перед ноутбуком с телефоном в руке"
+                            width="370" loading="lazy" />
+                    </picture>
                         <div class="offers__container">
                          <p class="offers__descript">Мобильные приложения</p></div>
                 </li>
-                <li class="offers__item"><img class="offers_img" src="./images/image3.jpg"
-                         alt="человек сидит за столом и держит в руках планшет" 
-                         width="370"/>
+                <li class="offers__item">
+                    <picture>
+                        <source media="(min-width: 1200px)"
+                            srcset="./images/gallery/image3-desk@1x.jpg 1x, ./images/gallery/image3-desk@2x.jpg 2x" />
+                        <source media="(min-width: 768px)"
+                            srcset="./images/gallery/image3-desk@1x.jpg 1x, ./images/gallery/image3-desk@2x.jpg 2x" />
+                        <source media="(max-width: 767px)"
+                            srcset="./images/gallery/image3-desk@1x.jpg 1x, ./images/gallery/image3-desk@2x.jpg 2x" />
+                        <img class="offers_img" src="./images/gallery/image3-desk@1x.jpg" alt="человек с планшетом в руках"
+                            width="370" loading="lazy" />
+                    </picture>
                         <div class="offers__container">
                          <p class="offers__descript">Дизайнерские решения</p></div>
                 </li>
@@ -155,7 +179,18 @@
             <h2 class="team__title">Наша команда</h2>
             <ul class="team__list">
                 <li class="team__item">
-                    <img class="team__img" src="./images/igor.jpg" alt="Игорь Демьяненко" width="270"/>
+                    <picture class="team__pic">
+                        <source
+                            media="(min-width: 1200px)"
+                            srcset="./images/gallery/igor-desk@1x.jpg 1x, ./images/gallery/igor-desk@2x.jpg 2x"/>
+                        <source 
+                            media="(min-width: 768px)" 
+                            srcset="./images/gallery/igor-tab@1x.jpg 1x, ./images/gallery/igor-tab@2x.jpg 2x" />
+                        <source 
+                            media="(max-width: 767px)" 
+                            srcset="./images/gallery/igor-mob@1x.jpg 1x, ./images/gallery/igor-mob@2x.jpg 2x" />
+                        <img class="team__img" src="./images/gallery/igor-mob@1x.jpg" alt="Игорь Демьяненко" width="450" height="460" loading="lazy" />
+                    </picture>
                     <div class="team__meta">
                     <h3 class="team__name">Игорь Демьяненко</h3>
                     <p class="team__position">Product Designer</p>
@@ -185,7 +220,16 @@
                     </div>
                 </li>
                 <li class="team__item">
-                    <img class="team__img" src="./images/olga.jpg" alt="Ольга Репина" width="270"/>
+                    <picture class="team__pic">
+                        <source media="(min-width: 1200px)"
+                            srcset="./images/gallery/olga-desk@1x.jpg 1x, ./images/gallery/olga-desk@2x.jpg 2x" />
+                        <source media="(min-width: 768px)"
+                            srcset="./images/gallery/olga-tab@1x.jpg 1x, ./images/gallery/olga-tab@2x.jpg 2x" />
+                        <source media="(max-width: 767px)"
+                            srcset="./images/gallery/olga-mob@1x.jpg 1x, ./images/gallery/olga-mob@2x.jpg 2x" />
+                        <img class="team__img" src="./images/gallery/olga-mob@1x.jpg" alt="Ольга Репина" width="450" height="460"
+                            loading="lazy" />
+                    </picture>
                     <div class="team__meta">
                     <h3 class="team__name">Ольга Репина</h3>
                     <p class="team__position">Developer</p>
@@ -218,7 +262,16 @@
                     </div>
                 </li>
                 <li class="team__item">
-                    <img class="team__img" src="./images/nikolai.jpg" alt="Николай Тарасов" width="270"/>
+                    <picture class="team__pic">
+                        <source media="(min-width: 1200px)"
+                            srcset="./images/gallery/nik-desk@1x.jpg 1x, ./images/gallery/nik-desk@2x.jpg 2x" />
+                        <source media="(min-width: 768px)"
+                            srcset="./images/gallery/nik-tab@1x.jpg 1x, ./images/gallery/nik-tab@2x.jpg 2x" />
+                        <source media="(max-width: 767px)"
+                            srcset="./images/gallery/nik-mob@1x.jpg 1x, ./images/gallery/nik-mob@2x.jpg 2x" />
+                        <img class="team__img" src="./images/gallery/nik-mob@1x.jpg" alt="Николай Тарасов" width="450" height="460"
+                            loading="lazy" />
+                    </picture>
                     <div class="team__meta">
                     <h3 class="team__name">Николай Тарасов</h3>
                     <p class="team__position">Marketing</p>
@@ -251,7 +304,16 @@
                     </div>
                 </li>
                 <li class="team__item">                    
-                    <img class="team__img" src="./images/michael.jpg" alt="Михаил Ермаков" width="270"/>
+                    <picture class="team__pic">
+                        <source media="(min-width: 1200px)"
+                            srcset="./images/gallery/michael-desk@1x.jpg 1x, ./images/gallery/michael-desk@2x.jpg 2x" />
+                        <source media="(min-width: 768px)"
+                            srcset="./images/gallery/michael-tab@1x.jpg 1x, ./images/gallery/michael-tab@2x.jpg 2x" />
+                        <source media="(max-width: 767px)"
+                            srcset="./images/gallery/michael-mob@1x.jpg 1x, ./images/gallery/michael-mob@2x.jpg 2x" />
+                        <img class="team__img" src="./images/gallery/michael-mob@1x.jpg" alt="Михаил Ермаков" width="450" height="460"
+                            loading="lazy" />
+                    </picture>
                     <div class="team__meta">
                     <h3 class="team__name">Михаил Ермаков</h3>
                     <p class="team__position">UI Designer</p>

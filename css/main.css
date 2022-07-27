@@ -29,7 +29,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-/*@import "./base/reset";*/
 ul {
   list-style: none;
   padding: 0;
@@ -50,7 +49,6 @@ p {
   margin: 0;
 }
 
-/*@import "./base/typography";*/
 .hero__title {
   margin: 0 auto 30px;
   width: 100%;
@@ -308,8 +306,6 @@ p {
   z-index: 1;
 }
 
-/*@import "./components/container";*/
-/*@import "./components/sections";*/
 .section {
   margin: auto;
   padding-top: 60px;
@@ -334,7 +330,6 @@ p {
   }
 }
 
-/*@import "./components/buttons";*/
 .button-main {
   padding: 10px 32px;
   min-width: 200px;
@@ -515,7 +510,6 @@ p {
   display: none;
 }
 
-/*@import "./components/logo";*/
 .logo {
   display: block;
   font-family: raleway, sans-serif;
@@ -551,7 +545,6 @@ p {
   }
 }
 
-/*@import "./layouts/header";*/
 .header {
   position: relative;
   border-bottom: 1px solid #ececec;
@@ -729,26 +722,50 @@ p {
   }
 }
 
-/*@import "./layouts/hero";*/
 .hero {
   max-width: 1600px;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-color: rgb(47, 48, 58);
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/gallery/hero-mob@1x.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/gallery/hero-mob@1x.jpg");
+}
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/gallery/hero-mob@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/gallery/hero-mob@2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/gallery/hero-tab@1x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/gallery/hero-tab@1x.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/gallery/hero-tab@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/gallery/hero-tab@2x.jpg");
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero {
     height: 600px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/gallery/hero-desk@1x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/gallery/hero-desk@1x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/gallery/hero-desk@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/gallery/hero-desk@2x.jpg");
   }
 }
 
-/*@import "./layouts/advantages";*/
 .advantages__list {
   display: block;
   margin: auto;
@@ -858,7 +875,6 @@ p {
   }
 }
 
-/*@import "./layouts/offers";*/
 .offers {
   display: none;
   padding-top: 0;
@@ -890,7 +906,6 @@ p {
   margin-left: 0;
 }
 
-/*@import "./layouts/team";*/
 .team {
   background-color: #f5f4fa;
 }
@@ -942,6 +957,7 @@ p {
 
 .team__item {
   width: 100%;
+  max-height: 622px;
   margin: 0 auto 30px;
   padding-bottom: 30px;
   background-color: #ffffff;
@@ -958,6 +974,7 @@ p {
 @media screen and (min-width: 768px) {
   .team__item {
     width: 354px;
+    height: 536px;
     margin: 0;
   }
 }
@@ -976,14 +993,13 @@ p {
 }
 
 .team__img {
-  margin: 0 auto 30px;
+  margin: 0 auto;
   width: 100%;
   height: 100%;
 }
 @media screen and (min-width: 768px) {
   .team__img {
     margin: 0;
-    margin-bottom: 30px;
     width: 354px;
     height: 374px;
   }
@@ -991,7 +1007,6 @@ p {
 @media screen and (min-width: 1200px) {
   .team__img {
     margin: 0;
-    margin-bottom: 30px;
     width: 270px;
     height: 260px;
   }
@@ -1047,7 +1062,10 @@ p {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/*@import "./layouts/clientel";*/
+.team__meta {
+  margin-top: 30px;
+}
+
 .clientel__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1120,7 +1138,6 @@ p {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/*@import "./layouts/footer";*/
 footer {
   background-color: #2f303a;
   padding-top: 60px;
@@ -1150,7 +1167,6 @@ footer {
   }
 }
 
-/*@import "./layouts/address";*/
 .address {
   width: 100%;
 }
@@ -1201,7 +1217,6 @@ footer {
   margin-bottom: 9px;
 }
 
-/*@import "./layouts/invitation";*/
 .invitation {
   max-width: 206px;
   margin-left: auto;
@@ -1301,7 +1316,6 @@ footer {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/*@import "./layouts/mailing";*/
 .mailing {
   margin-top: 60px;
 }
@@ -1475,7 +1489,6 @@ footer {
   text-decoration: none;
 }
 
-/*@import "./layouts/modal";*/
 .is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -1686,7 +1699,6 @@ footer {
   }
 }
 
-/*@import "./layouts/filter";*/
 .filter {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1714,7 +1726,6 @@ footer {
   }
 }
 
-/*@import "./layouts/portfolio";*/
 .portfolio {
   display: -webkit-box;
   display: -ms-flexbox;
